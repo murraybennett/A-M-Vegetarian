@@ -61,7 +61,11 @@ h2{
     background-color: #4f5b5d; 
 }
 
-
+p{
+    
+    font-family: sans-serif;
+    font-size: 20px;
+}
 .p::first-letter{
     
     font-size: 200%;
@@ -131,12 +135,17 @@ footer{
     
     
 }
-
 .text1:hover{
     
     background-color: red;
     opacity: 5;
 }
+
+button {
+    
+    background-color: purple;
+}
+
 
 /*
 #hometxt{
@@ -174,19 +183,27 @@ body{
 
 tr{
     
-   width: 100px;
-    padding: 30px;
+   width: 0px;
+    padding: 0px;
+    border: 1px solid black;
 }
 
-
-td{
+table, tr, td{
     
+    border-collapse: collapse;
+}
+td{
+   color: white;
    width: 30%;
-    padding: 30px;
+     border: 1px solid black;
+    border-color: gray;
+   
+    
 }
 table{
     
-padding-left: 30%;
+padding-left: 10%;
+    margin-bottom: 40px;
 }
 
 .flex-container{
@@ -220,4 +237,88 @@ img{
     height: 184px;
     width: 275px;
     border-radius: 20%;
+}
+
+#head_about{
+     padding: 5px;
+  max-width: 600px;
+  margin: 40px auto;
+  
+   color: white;
+}  
+
+#about{
+    
+    padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  transition: .3s ease;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#about:hover{
+    
+    box-shadow: 0px 0px 40px 16px rgba(18,18,18,1.00);
+}
+
+#head_contact{
+    
+  padding: 20px;
+  margin-bottom: 10px;
+  max-width: 600px;
+/*  margin: 40px auto;*/
+  color: white;
+}
+#clink{
+    
+    color: white;
+}
+
+.contactform{ 
+    padding: 40px;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  transition: .3s ease;
+  
+}
+
+.contactform:hover{
+    
+    box-shadow: 0px 0px 40px 16px rgba(18,18,18,1.00);
+}
+
+#formbg{
+    
+    padding: 40px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  transition: .3s ease;
+    background-color: #701B77;
+    color: white;
+}
+
+#formbg:hover{
+    
+    box-shadow: 0px 0px 40px 16px rgba(18,18,18,1.00);
+}
+/*#email, #firstname, #lastname, #subject, #message{*/
+    
+/*    width: 100%;*/
+/*}*/
+
+.input{
+    
+    width: 100%;
+    height: 40px;
+    border-color: gray;
+   border-radius: 4px;
+    margin: 4px;
+    
 }
